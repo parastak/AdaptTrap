@@ -1,0 +1,18 @@
+attackers:
+  - name: recon_probe
+    detect_threshold: 0.50
+    ssh_aggression: 0.30
+    patience: 0.60
+    timing_tolerance: 0.40
+
+  - name: scripted_exploit
+    detect_threshold: 0.40
+    ssh_aggression: 0.80
+    patience: 0.90
+    timing_tolerance: 0.20
+
+  - name: ai_probe
+    detect_threshold: 0.25
+    ssh_aggression: 0.50
+    patience: 1.00
+    timing_tolerance: 0.10

@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  defender:
+    build: .
+    container_name: adapttrap_defender
+    networks:
+      adtrap_net:
+        ipv4_address: 172.20.0.10
+    command: python main.py service
+
+  attacker:
+    build: .
+    container_name: adapttrap_attacker
+    networks:
+      adtrap_net:
+        ipv4_address: 172.20.0.20
+    depends_on:
+      - defender
+
+networks:
+  adtrap_net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16

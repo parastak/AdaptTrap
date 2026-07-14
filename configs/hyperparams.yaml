@@ -1,0 +1,16 @@
+project_name: adapttrap
+mode: dev
+
+environment:
+  services:
+    - ssh
+    - http
+    - redis
+  max_steps: 50
+
+defender:
+  algorithm: ppo
+  device: cpu
+
+logging:
+  log_dir: logs/

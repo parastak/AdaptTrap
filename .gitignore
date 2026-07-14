@@ -1,0 +1,67 @@
+# Python cache and test output
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# Local Python environments
+venv/
+.venv/
+ENV/
+
+# Local machine / editor files
+.python-version
+.directory
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Environment variables and secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+*.cer
+credentials.json
+service-account*.json
+secrets*.json
+*_secret.*
+*_token.*
+id_rsa
+id_ed25519
+known_hosts
+
+# Local databases and runtime state
+*.db
+*.sqlite
+*.sqlite3
+logs/threat_intel/
+logs/runtime/
+logs/tmp/
+
+# Release archives are preserved locally, not committed
+releases/
+
+# Large generated ML artifacts and logs
+logs/*.pt
+logs/*.pth
+logs/model_*.pt
+logs/eval_results_*.json
+logs/training*.json
+logs/finetune*.json
+logs/baseline_*.json
+logs/plots/
+
+# Optional demo exports; publish selected files deliberately
+*.mp4
