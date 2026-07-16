@@ -1,0 +1,25 @@
+cff-version: 1.1.0
+title: "AdaptTrap"
+message: "If you use AdaptTrap in your research, please cite this repository."
+type: software
+
+authors:
+  - family-names: Tak
+    given-names: Paras
+
+repository-code: "https://github.com/parastak/AdaptTrap"
+
+url: "https://github.com/parastak/AdaptTrap"
+
+license: MIT
+
+keywords:
+  - cybersecurity
+  - reinforcement-learning
+  - honeypot
+  - cyber-deception
+  - artificial-intelligence
+
+abstract: >
+  Adaptive reinforcement learning framework for
+  consistency-aware cyber deception and honeypot research.
