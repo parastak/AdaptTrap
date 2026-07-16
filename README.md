@@ -5,7 +5,7 @@
 ### Adaptive Reinforcement Learning Framework for Consistency-Aware Cyber Deception
 
 <p align="center">
-<img src="assets/banner.png" width="100%">
+<img src="images/adapttrap logo.png" width="200px">
 </p>
 
 <p align="center">
@@ -72,7 +72,7 @@ AdaptTrap introduces three key innovations:
 
 <p align="center">
 
-<img src="assets/architecture.png" width="90%">
+<img src="images/architecture.png" width="90%">
 
 </p>
 
@@ -123,7 +123,7 @@ The trained RL defender consistently outperformed every baseline across two inde
 
 <p align="center">
 
-<img src="assets/results.png" width="90%">
+<img src="images/hero_stats_banner.png" width="90%">
 
 </p>
 
@@ -165,17 +165,38 @@ python main.py --mode train
 
 ---
 
-# 📸 Demo
 
-<p align="center">
+## 📊 Results
 
-<img src="assets/demo.gif" width="90%">
+<table>
+<tr>
+<td align="center">
+<img src="images/detection_rate_by_attacker.png" width="500"><br>
+<b>Detection Rate</b><br>
+<sub>RL achieves 0% detection against the adaptive AI attacker.</sub>
+</td>
 
-</p>
+<td align="center">
+<img src="images/dwell_time_by_attacker.png" width="500"><br>
+<b>Attacker Dwell Time</b><br>
+<sub>Adaptive deception keeps attackers engaged for longer.</sub>
+</td>
+</tr>
 
-> Replace this GIF with a short recording showing training, evaluation, or live honeypot interaction.
+<tr>
+<td align="center">
+<img src="images/reward_by_attacker.png" width="500"><br>
+<b>Raw Reward</b><br>
+<sub>RL consistently outperforms all baseline defenders.</sub>
+</td>
 
----
+<td align="center">
+<img src="images/training_reward_curve.png" width="500"><br>
+<b>Training Curve</b><br>
+<sub>Stable curriculum learning over 1,500 episodes.</sub>
+</td>
+</tr>
+</table>
 
 # 📈 Project Highlights
 
@@ -200,36 +221,10 @@ python main.py --mode train
 
 Training includes:
 
-- Curriculum Learning | Multi-Head Actor-Critic | Adaptive Entropy | Gradient Clipping | Automatic Checkpointing
+- Curriculum Learning  |  Multi-Head Actor-Critic  |  Adaptive Entropy  |  Gradient Clipping  |  Automatic Checkpointing
+ 
 ---
 
-# 📊 Evaluation
-
-Evaluate the pretrained model.
-
-```bash
-python main.py --mode evaluate
-```
-
-Run the benchmark suite.
-
-```bash
-python evaluation/benchmark.py
-```
-
-Generate plots.
-
-```bash
-python evaluation/plots.py
-```
-
-Generate the evaluation report.
-
-```bash
-python evaluation/report_generator.py
-```
-
----
 
 # 📦 Reproducibility
 
